@@ -30,7 +30,7 @@ class MyHeader extends LitElement {
           text-align: center;
           position: absolute;
           left: 50%;
-          transform: translateX(-70%);
+          transform: translateX(-50%);
         }
       </style>
       <header>
