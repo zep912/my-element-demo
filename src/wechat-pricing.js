@@ -161,9 +161,8 @@ class WechatPricing extends LitElement {
           opacity: 1;
         }
       </style>
-      <!--头部header引入-->
-      <my-header>
-        <span slot="title">最新报价</span>
+      <!--头部header引入--> 
+      <my-header title="最新报价">
       </my-header> 
       <div class="content">
         <table>

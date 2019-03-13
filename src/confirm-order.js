@@ -5,11 +5,14 @@ import './input-number'
 
 class confirmOrder extends LitElement {
   static get properties() {
-    return {}
+    return {
+      buyingTons: { type: Number }
+    }
   }
 
   constructor() {
     super()
+    this.buyingTons = 10
   }
 
   render() {
@@ -64,14 +67,13 @@ class confirmOrder extends LitElement {
           color: #fff;
         }
       </style>
-      <my-header>
-        <span slot="title">确认订单</span>
+      <my-header title="确认订单">
       </my-header>
       <sku-card></sku-card>
       <div class="layout">
         <div class="box">购买吨数:</div>
         <div class="box-number">
-          <input-number></input-number>
+          <input-number value="${this.buyingTons}"></input-number>
         </div>
       </div>
       <div class="layout">

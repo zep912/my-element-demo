@@ -2,6 +2,7 @@ import { LitElement, html } from 'lit-element'
 class MyHeader extends LitElement {
   static get properties() {
     return {
+      title: { type: String }
     }
   }
 
@@ -36,7 +37,7 @@ class MyHeader extends LitElement {
       <header>
         <span class="back">&#60</span>
         <span class="title">
-          <slot name="title"></slot>
+          ${this.title} 
         </span>
       </header>
     `;
